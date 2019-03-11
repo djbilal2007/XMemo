@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/back_arrow_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/white_back_arrow_icon"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/static_profile_txt"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/relative_layout_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.xmemo.xmemo_image.utils.CircleImageView
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/img_edit_profile"
+            android:src="@mipmap/default_user_img"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        <com.app.xmemo.xmemo_image.utils.CircleImageView
+            android:id="@+id/blue_pencil_icon"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/blue_pencil_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/relative_layout_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_fullName_edit_prof">
+
+            <EditText
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_fullName_edit_profile"
+                android:inputType="text|textCapSentences"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txt_email_edit_profile"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_update_edit_profile"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context="com.app.xmemo.xmemo_image.activity.AddContactActivity">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:id="@+id/static_add_contact"
+        android:text="Add Contacts"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/static_add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/horiz_line"
+        android:background="@color/colorAccent"/>
+
+<!--    <ListView
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_below="@+id/horiz_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/listView_addContact"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/horiz_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView_addContact"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/add_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/add_contactActivityBtn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/upload_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/send_contactBtn"
+        android:layout_gravity="bottom|right"/>
+
+</RelativeLayout>

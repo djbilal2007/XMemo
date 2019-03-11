@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@mipmap/gallery_icon"
+        android:title="@string/navigation_gallery" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@mipmap/contact_icon"
+        android:title="@string/navigation_contact" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@mipmap/setting_icon"
+        android:title="@string/navigation_settings" />
+
+</menu>

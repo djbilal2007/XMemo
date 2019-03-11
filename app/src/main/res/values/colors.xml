@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#218BCA</color>
+    <color name="colorPrimaryDark">#218BCA</color>
+    <color name="colorAccent">#218BCA</color>
+
+    <color name="bg_gray">#E6E6E6</color>
+    <color name="contact_text">#7C7C7C</color>
+    <color name="black_txt">#262626</color>
+    <color name="white">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
+
+
+</resources>

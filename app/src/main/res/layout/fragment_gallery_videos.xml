@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".fragment.GalleryPhotoFragment">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_videos"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="2dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/add_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/add_vidBtn" />
+
+</RelativeLayout>

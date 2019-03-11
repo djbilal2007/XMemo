@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.xmemo.xmemo_image.activity.LoginActivity">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/logo"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/static_logo"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/static_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_email_login">
+
+            <EditText
+                android:drawableLeft="@mipmap/email_icon"
+                android:textColorHint="@color/black_txt"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_email"
+                android:hint="  Email-Id"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_password">
+
+            <EditText
+                android:textColorHint="@color/black_txt"
+                android:drawableLeft="@mipmap/lock_icon"
+                android:paddingBottom="20dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_password"
+                android:hint="  Password"
+                android:inputType="textPassword|textCapSentences"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"
+            android:layout_below="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_login"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_forgot_password"
+            android:layout_toRightOf="@+id/txt_static"
+            android:textColor="@color/black_txt"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black_txt"
+            android:id="@+id/txt_static"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? " />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/txt_signup"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_here" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "90329747584",
+    "firebase_url": "https://xmemo-71fbe.firebaseio.com",
+    "project_id": "xmemo-71fbe",
+    "storage_bucket": "xmemo-71fbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90329747584:android:c42e7a9c05ee33b3",
+        "android_client_info": {
+          "package_name": "com.app.xmemo.xmemo_image"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90329747584-orktk0sprtak3n9klj9iqp8lh21oaoui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.xmemo.xmemo_image",
+            "certificate_hash": "de580ea4227483a8b8b2d98dae2e85a4f6c351ab"
+          }
+        },
+        {
+          "client_id": "90329747584-mu99q5ilmjj541a69vgsv20odq0e0or5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbZjDRAghZAdVmdZINjzSJ8DreHOt-f2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90329747584-mu99q5ilmjj541a69vgsv20odq0e0or5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

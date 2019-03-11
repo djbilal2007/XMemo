@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.xmemo.xmemo_image.activity.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/back_arrow_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/white_back_arrow_icon"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/static_create_account_txt"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Create Account"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.xmemo.xmemo_image.utils.CircleImageView
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@mipmap/default_user_img"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:id="@+id/img_profile_pic"/>
+
+                <com.app.xmemo.xmemo_image.utils.CircleImageView
+                    android:id="@+id/camera_icon"
+                    android:layout_marginTop="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/camera_icon" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/relative_layout_profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_layout_fullname_register">
+
+                <EditText
+                    android:textColor="@color/black_txt"
+                    android:textColorHint="@color/black_txt"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_fullname_register"
+                    android:hint="  Full Name"
+                    android:inputType="text|textCapSentences"
+                    android:textSize="17sp"
+                    android:drawableLeft="@mipmap/user_icon"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/input_layout_fullname_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_layout_email_register">
+
+                <EditText
+                    android:drawableLeft="@mipmap/email_icon"
+                    android:textColorHint="@color/black_txt"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_email_register"
+                    android:hint="  Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="17sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/input_layout_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_layout_pwd_register">
+
+                <EditText
+                    android:textColor="@color/black_txt"
+                    android:textColorHint="@color/black_txt"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_pwd_register"
+                    android:hint="  Password"
+                    android:inputType="textPassword|textCapSentences"
+                    android:textSize="17sp"
+                    android:drawableLeft="@mipmap/lock_icon"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/input_layout_pwd_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_layout_confirmpwd_register">
+
+                <EditText
+                    android:inputType="textPassword|textCapSentences"
+                    android:textColor="@color/black_txt"
+                    android:textColorHint="@color/black_txt"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_confirmpwd_register"
+                    android:hint="  Confirm Password"
+                    android:textSize="17sp"
+                    android:drawableLeft="@mipmap/lock_icon"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/mybutton"
+                android:layout_below="@+id/input_layout_confirmpwd_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_submit_register"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

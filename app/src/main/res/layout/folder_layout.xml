@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="2dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardPreventCornerOverlap="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/folder_image"
+                    android:src="@mipmap/placeholder"
+                    />
+
+                <RelativeLayout
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/folder_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/folder_icon"
+                        android:id="@+id/static_folder_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/folder_file_count"
+                        android:layout_toRightOf="@+id/static_folder_icon"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_below="@+id/folder_file_count"
+                        android:layout_toRightOf="@+id/static_folder_icon"
+                        android:id="@+id/folder_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"/>
+
+                    <ImageView
+                        android:id="@+id/three_dots_option"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/option_icon" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

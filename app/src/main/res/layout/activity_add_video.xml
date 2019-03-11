@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddVideoActivity">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Videos"
+        android:textColor="@android:color/black"
+        android:id="@+id/folder_name_video_header"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/folder_name_video_header"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/horiz_line"
+        android:background="@color/colorAccent"/>
+
+    <GridView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/horiz_line"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_addVideo"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/add_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/add_videoBtn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/upload_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/send_videoBtn"
+        android:layout_gravity="bottom|right"/>
+
+</RelativeLayout>

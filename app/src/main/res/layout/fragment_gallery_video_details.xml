@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.VideoDetailsFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/back_photo_vid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/white_back_arrow_icon"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/back_photo_vid"
+                android:id="@+id/static_videos_txt"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Videos"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/header_txt_video_frag"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/back_photo_vid"
+                android:layout_below="@+id/static_videos_txt"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <GridView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_folder_video_details"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/add_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/add_vidBtn_folder" />
+
+</RelativeLayout>
